@@ -1,0 +1,61 @@
+RFM Metrics calculation:
+
+1. SQL Query to Calculate RFM:
+
+-- 1. Set the latest date in the dataset as the reference date
+SELECT MAX(InvoiceDate) AS LastInvoiceDate FROM Transactions;
+Assume the latest date is 2011-12-09.
+
+2. Recency Calculation:
+
+SELECT 
+    CustomerID,
+    DATEDIFF('2011-12-09', MAX(InvoiceDate)) AS Recency
+FROM Transactions
+GROUP BY CustomerID;
+
+Explanation:
+DATEDIFF calculates the number of days since the last purchase.
+A lower value indicates recent activity.
+
+3. Frequency Calculation:
+
+SELECT 
+    CustomerID,
+    COUNT(DISTINCT Invoice) AS Frequency
+FROM Transactions
+GROUP BY CustomerID;
+
+Explanation:
+Counts unique invoices to measure how often the customer makes purchases.
+
+4. Monetary Calculation:
+
+SELECT 
+    CustomerID,
+    SUM(TotalPrice) AS Monetary
+FROM Transactions
+GROUP BY CustomerID;
+
+Explanation:
+Sums the total spending per customer.
+
+5.Combine RFM Metrics Using SQL
+
+SELECT 
+    r.CustomerID,
+    r.Recency,
+    f.Frequency,
+    m.Monetary
+FROM 
+    (SELECT CustomerID, DATEDIFF('2011-12-09', MAX(InvoiceDate)) AS Recency
+     FROM Transactions
+     GROUP BY CustomerID) AS r
+JOIN 
+    (SELECT CustomerID, COUNT(DISTINCT Invoice) AS Frequency
+     FROM Transactions
+     GROUP BY CustomerID) AS f ON r.CustomerID = f.CustomerID
+JOIN 
+    (SELECT CustomerID, SUM(TotalPrice) AS Monetary
+     FROM Transactions
+     GROUP BY CustomerID) AS m ON r.CustomerID = m.CustomerID;
