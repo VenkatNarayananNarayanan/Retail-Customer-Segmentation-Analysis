@@ -9,8 +9,11 @@ In today's competitive retail environment, understanding customer behavior is cr
 
 The primary objective of this project is to:
 ✅ Identify distinct customer segments based on purchasing patterns.
+
 ✅ Analyze key characteristics of each segment.
+
 ✅ Provide data-driven recommendations for customer engagement strategies.
+
 ✅ Visualize the findings using Tableau.
 
 **3. Dataset & Preprocessing**
@@ -34,9 +37,13 @@ This dataset was processed to calculate RFM metrics, which formed the basis for 
 
 Preprocessing Steps:
 ✅ Removed missing CustomerID.
+
 ✅ Removed duplicates.
+
 ✅ Filtered out negative Quantity (returns).
+
 ✅ Removed Outlier using IQR Method. 
+
 ✅ Created TotalPrice.
 
 SQL Database Integration:
@@ -60,8 +67,11 @@ Monetary (M): Total amount spent by a customer.
 
 Clustering Approach:
 ✅ Standardized RFM values using StandardScaler.
-✅ Applied log transformation to handle skewness
+
+✅ Applied log transformation to handle skewness.
+
 ✅ Used Elbow Method to find optimal clusters.
+
 ✅ Applied K-Means clustering to segment customers.
 
 
@@ -94,7 +104,9 @@ This project successfully segmented retail customers using the Online Retail II 
 
 To improve this analysis further, future work could include:
 ✅ Predictive Analytics: Using machine learning to forecast customer churn.
+
 ✅ Behavioral Analysis: Analyzing customer browsing history alongside purchase history.
+
 ✅ Integration with Marketing Automation: Implementing real-time customer segmentation in marketing campaigns.
 
 **10. Technologies Used**
