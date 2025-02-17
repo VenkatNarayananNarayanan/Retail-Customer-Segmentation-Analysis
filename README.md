@@ -6,6 +6,7 @@
 In today's competitive retail environment, understanding customer behavior is crucial for personalized marketing and business growth. This project utilizes the Online Retail II UCI dataset from Kaggle, which contains transactional data from a UK-based online retail store between 2009-2011. The project segments customers based on Recency, Frequency, and Monetary (RFM) analysis using SQL, Python, and Tableau. The purpose is to help businesses identify customer segments, understand their purchasing patterns, and create targeted marketing strategies to improve retention and revenue.
 
 **2. Objective**
+
 The primary objective of this project is to:
 ✅ Identify distinct customer segments based on purchasing patterns.
 ✅ Analyze key characteristics of each segment.
@@ -13,6 +14,7 @@ The primary objective of this project is to:
 ✅ Visualize the findings using Tableau.
 
 **3. Dataset & Preprocessing**
+
 Dataset: Online Retail II UCI from Kaggle( https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci )
 
 About Dataset:
@@ -49,6 +51,7 @@ Monetary: Sum of TotalPrice per customer.
 The extracted RFM metrics were then fetched into Jupyter Notebook for further analysis.
 
 **4. RFM Analysis & Clustering**
+
 RFM Calculation:
 
 Recency (R): How recently a customer made a purchase.
@@ -63,6 +66,7 @@ Clustering Approach:
 
 
 **5. Customer Segmentation Insights**
+
 ![image](https://github.com/user-attachments/assets/1d28129f-321a-4e35-b1c7-3955fa25252d)
 
 **6. Data Visualization in Tableau**
@@ -75,6 +79,7 @@ Recency vs. Monetary and Frequency vs. Monetary: Scatter plots highlighting segm
 Segment Distribution: Pie chart showing customer segment proportions.
 
 **7. Business Recommendations**
+
 Based on the segmentation, recommended strategies:
 VIP Customers : Offer exclusive rewards, early access to sales, and premium support.
 Moderately Active Customers : Implement targeted promotions and loyalty points to encourage frequent purchases.
@@ -86,15 +91,18 @@ One-time Buyers: Provide first-time purchase discounts and improve post-purchase
 This project successfully segmented retail customers using the Online Retail II UCI dataset from Kaggle. RFM analysis provided a comprehensive understanding of customer purchasing behavior, and K-Means clustering allowed for meaningful segmentation. The resulting insights enable businesses to implement personalized marketing strategies, improve customer engagement, and boost revenue. This project also highlights the importance of data-driven decision-making in modern retail.
 
 **9. Future Enhancements**
+
 To improve this analysis further, future work could include:
 ✅ Predictive Analytics: Using machine learning to forecast customer churn.
 ✅ Behavioral Analysis: Analyzing customer browsing history alongside purchase history.
 ✅ Integration with Marketing Automation: Implementing real-time customer segmentation in marketing campaigns.
 
 **10. Technologies Used**
+
 Python: Data extraction, preprocessing(Pandas, Scikit-learn, Matplotlib, Seaborn) and K-mean clustering
 SQL: Data storage and RFM metric calculations.
 Tableau: Dashboard visualizations.
 
 **11. Results & Code**
+
 Find the complete project and dataset on GitHub Repository(https://github.com/VenkatNarayananNarayanan/Retail-Customer-Segmentation-Analysis/tree/main).
