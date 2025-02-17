@@ -94,9 +94,13 @@ Segment Distribution: Pie chart showing customer segment proportions.
 **7. Business Recommendations**
 
 Based on the segmentation, recommended strategies:
+
 VIP Customers : Offer exclusive rewards, early access to sales, and premium support.
+
 Moderately Active Customers : Implement targeted promotions and loyalty points to encourage frequent purchases.
+
 At-Risk Customers: Run re-engagement email campaigns, offering personalized discounts.
+
 One-time Buyers: Provide first-time purchase discounts and improve post-purchase experience to increase retention.
 
 **8. Conclusion**
