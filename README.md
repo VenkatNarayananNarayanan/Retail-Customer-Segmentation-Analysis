@@ -2,6 +2,7 @@
 # Retail-Customer-Segmentation-Analysis
 
 **1. Introduction**
+
 In today's competitive retail environment, understanding customer behavior is crucial for personalized marketing and business growth. This project utilizes the Online Retail II UCI dataset from Kaggle, which contains transactional data from a UK-based online retail store between 2009-2011. The project segments customers based on Recency, Frequency, and Monetary (RFM) analysis using SQL, Python, and Tableau. The purpose is to help businesses identify customer segments, understand their purchasing patterns, and create targeted marketing strategies to improve retention and revenue.
 
 **2. Objective**
