@@ -8,6 +8,7 @@ In today's competitive retail environment, understanding customer behavior is cr
 **2. Objective**
 
 The primary objective of this project is to:
+
 ✅ Identify distinct customer segments based on purchasing patterns.
 
 ✅ Analyze key characteristics of each segment.
