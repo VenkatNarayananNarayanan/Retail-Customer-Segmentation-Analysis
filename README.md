@@ -1,16 +1,17 @@
 ![image](https://github.com/user-attachments/assets/464487fa-9d82-4829-bb95-420e56da502e)
 # Retail-Customer-Segmentation-Analysis
 
+**2. Introduction**
 In today's competitive retail environment, understanding customer behavior is crucial for personalized marketing and business growth. This project segments retail customers based on purchasing behavior using Recency, Frequency, and Monetary (RFM) Analysis and K-Means clustering. The results help businesses target the right customers with tailored marketing strategies, ultimately improving customer retention and revenue.
 
-2. Objective
+**3. Objective**
 The primary objective of this project is to:
 ✅ Identify distinct customer segments based on purchasing patterns.
 ✅ Analyze key characteristics of each segment.
 ✅ Provide data-driven recommendations for customer engagement strategies.
 ✅ Visualize the findings using Tableau.
 
-3. Dataset & Preprocessing
+**4. Dataset & Preprocessing**
 Dataset: Online Retail II UCI from Kaggle( https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci )
 
 About Dataset:
@@ -27,9 +28,10 @@ Preprocessing Steps:
 ✅ Removed missing CustomerID.
 ✅ Removed duplicates.
 ✅ Filtered out negative Quantity (returns).
-✅ Created TotalPrice and TransactionDate.
+✅ Removed Outlier using IQR Method. 
+✅ Created TotalPrice.
 
-4. RFM Analysis & Clustering
+**5. RFM Analysis & Clustering**
 RFM Calculation:
 
 Recency (R): How recently a customer made a purchase.
@@ -37,12 +39,13 @@ Frequency (F): How often a customer makes purchases.
 Monetary (M): Total amount spent by a customer.
 
 Clustering Approach:
-✅ Standardized RFM values.
+✅ Standardized RFM values using StandardScaler.
+✅ Applied log transformation to handle skewness
 ✅ Used Elbow Method to find optimal clusters.
 ✅ Applied K-Means clustering to segment customers.
 
 
-**Customer Segmentation Insights**
+**6. Customer Segmentation Insights**
 ![image](https://github.com/user-attachments/assets/1d28129f-321a-4e35-b1c7-3955fa25252d)
 
 
