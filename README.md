@@ -36,6 +36,7 @@ Country – Country where the customer resides.
 This dataset was processed to calculate RFM metrics, which formed the basis for customer segmentation.
 
 Preprocessing Steps:
+
 ✅ Removed missing CustomerID.
 
 ✅ Removed duplicates.
@@ -66,6 +67,7 @@ Frequency (F): How often a customer makes purchases.
 Monetary (M): Total amount spent by a customer.
 
 Clustering Approach:
+
 ✅ Standardized RFM values using StandardScaler.
 
 ✅ Applied log transformation to handle skewness.
@@ -103,6 +105,7 @@ This project successfully segmented retail customers using the Online Retail II 
 **9. Future Enhancements**
 
 To improve this analysis further, future work could include:
+
 ✅ Predictive Analytics: Using machine learning to forecast customer churn.
 
 ✅ Behavioral Analysis: Analyzing customer browsing history alongside purchase history.
